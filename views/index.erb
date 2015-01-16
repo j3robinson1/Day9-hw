@@ -1,0 +1,11 @@
+<a href="/new_blog" class="createblog">Create blog</a>
+<h5 class="blogs">Blogs</h5>
+<ul>
+	<% @blogs.each do |blog| %>
+		<div><a href="/blog/<%= blog.id %>"><button class="show">show</button></a>
+		<div class="title"><%= blog.title %>
+		</div>
+		<div class="content"><%= blog.content %></div></div>
+		<!-- <div class="space"></div> -->
+	<% end %>
+</ul>

@@ -1,0 +1,9 @@
+<a href="/" class="back">Back</a>
+<div class="show-title"><%= @blog.title %></div>
+<%= @blog.content %>
+<div class="border"></div>
+<form action="/delete-blog/<%= @blog.id %>" method="post">
+			<input type="hidden" name="_method" value="delete">
+			<input class="delete" type="submit" value="Delete">
+</form>
+<a href="/edit-blog/<%= @blog.id %>"class="edit">Edit</a>

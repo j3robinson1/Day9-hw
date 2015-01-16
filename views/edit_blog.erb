@@ -1,0 +1,10 @@
+<a href="/" class="back">Back</a>
+<div class="show-title"><%= @blog.title %></div>
+<%= @blog.content %>
+<div class="space"></div>
+<form action= "/save-blog/<%= @blog.id %>" method="post">
+			<input type="hidden" name="_method" value="patch"></input>
+			<textarea rows="10" cols="100" name ="content"><%= @blog.content %></textarea>
+			<input class="edit-button" type="submit" value="Edit">
+
+</form>

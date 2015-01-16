@@ -1,0 +1,94 @@
+body {
+	background-color: #C9C4FF;
+	text-align: center;
+}
+.topbar {
+	position: relative;
+	background-color: #AC9DEB;
+	width: auto;
+	border-bottom: 3px solid black;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	height: 30px;
+	top: -8px;
+	text-align: right;
+}
+.login, .settings {
+	margin-right: 10px;
+}
+.login:hover, .settings:hover {
+	cursor: pointer;
+	color: white;
+}
+h4 {
+	font-size: 30px;
+	border-bottom: 2px solid black;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.createblog {
+	font-size: 20px;
+}
+.back {
+	position: absolute;
+	top: 1;
+	left: 15;
+}
+.show {
+	position: absolute;
+	left: 50;
+	height: 20px;
+	border-radius: 25%;
+	background-color: #A3FF99;
+}
+.create-blog, .delete, .edit-button {
+	position: relative;
+	border-radius: 25%;
+	background-color: #A3FF99;
+	margin-left: auto;
+	margin-right: auto;
+}
+.space {
+	margin-bottom: 30px;
+}
+.title, .show-title {
+	text-align: center;
+	border-bottom: 2px solid black;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: auto;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #A69EFF;
+}
+.border {
+	border-top: 2px solid black;
+}
+.createblog:hover, .edit:hover, .back:hover {
+	color: red;
+}
+.show:hover, .delete:hover, .edit-button:hover, .create-blog:hover {
+	background-color: #6AB362;
+	border-radius: 25%;
+	cursor: pointer;
+}
+h5 {
+	border-bottom: 1px solid black;
+	width: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content1 {
+top: -120;
+	position: relative;
+}
+.content {
+	position: relative;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
