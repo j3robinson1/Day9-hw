@@ -13,12 +13,43 @@ body {
 	top: -8px;
 	text-align: right;
 }
-.login, .settings {
-	margin-right: 10px;
+.login {
+	position: absolute;
+	top: 15;
 }
-.login:hover, .settings:hover {
+.login {
+	right: 15;
+}
+.settings {
+	right: 15;
+}
+.login:hover {
 	cursor: pointer;
-	color: white;
+	color: white
+}
+.profile {
+	position: absolute;
+	right: 200;
+	top: -5;
+}
+.logged_in {
+	position: absolute;
+	right: 125;
+	top: 16;
+}
+.logoff {
+	position: absolute;
+	right: 70;
+	top: 9;
+	border-radius: 25%;
+	background-color: #A3FF99;
+}
+.settings {
+	position: absolute;
+	right: 10;
+	top: 9;
+	border-radius: 25%;
+	background-color: #A3FF99;
 }
 h4 {
 	font-size: 30px;
@@ -29,10 +60,11 @@ h4 {
 }
 .createblog {
 	font-size: 20px;
+	color: #000096;
 }
 .back {
 	position: absolute;
-	top: 1;
+	top: 5;
 	left: 15;
 }
 .show {
@@ -68,9 +100,9 @@ h4 {
 	border-top: 2px solid black;
 }
 .createblog:hover, .edit:hover, .back:hover {
-	color: red;
+	color: #450000;
 }
-.show:hover, .delete:hover, .edit-button:hover, .create-blog:hover {
+.show:hover, .delete:hover, .edit-button:hover, .create-blog:hover, .settings:hover, .logoff:hover{
 	background-color: #6AB362;
 	border-radius: 25%;
 	cursor: pointer;

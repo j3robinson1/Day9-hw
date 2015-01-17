@@ -1,4 +1,17 @@
-<a href="/new_blog" class="createblog">Create blog</a>
+<div class="topbar">
+		<a href="/login" class="login">login</a>
+<ul>
+	<% @users.each do |user| %>
+		<h5 class="profile">Profile: </h5>
+		<div><a href="/user/<%= user.id %>"><button class="logoff">logoff</button></a>
+		<div class="logged_in"><%= user.username %></div></div>
+		<div><a href="/user/<%= user.id %>"><button class="settings">Settings</button></a>
+		<!-- <div class="space"></div> -->
+	<% end %>
+</ul>
+</div>
+<h4>Blog</h4>
+<strong><a href="/new_blog" class="createblog">Create blog</a></strong>
 <h5 class="blogs">Blogs</h5>
 <ul>
 	<% @blogs.each do |blog| %>

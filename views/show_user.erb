@@ -1,0 +1,8 @@
+<h4>Username</h4>
+<a href="/" class="back">Back</a>
+<div class="show-title"><%= @user.username %></div>
+<form action="/delete-user/<%= @user.id %>" method="post">
+			<input type="hidden" name="_method" value="delete">
+			<input class="delete" type="submit" value="Logoff">
+</form>
+<a href="/edit-user/<%= @user.id %>"class="edit">Change</a>

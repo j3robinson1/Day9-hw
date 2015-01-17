@@ -1,0 +1,10 @@
+<h4>User Settings</h4>
+<a href="/" class="back">Back</a>
+<div class="show-user"><%= @user.username %></div>
+<%= @user.password %>
+<div class="space"></div>
+<form action= "/save-user/<%= @user.id %>" method="post">
+			<input type="hidden" name="_method" value="patch"></input>
+			<input type="text" name="password"><%= @user.password %></input>
+			<input class="edit-button" type="submit" value="Change">
+</form>
